@@ -20,7 +20,7 @@ rust cli for testing ocs01 smart contract
 install and run with a single command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/yuwamu/ocs01-test/patch-1/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/yuwamu/ocs01-test/ux-fixes/install.sh | bash
 ```
 
 this automated installer will:
