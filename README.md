@@ -37,7 +37,7 @@ cargo build --release
 cp EI/exec_interface.json .
 ```
 
-**Wallet**
+**wallet**
 
 - Private Key : B64 Private Key
 
