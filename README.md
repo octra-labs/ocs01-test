@@ -37,6 +37,22 @@ cargo build --release
 cp EI/exec_interface.json .
 ```
 
+**wallet**
+
+- Private Key : B64 Private Key
+
+```bash
+nano wallet.json
+```
+
+```bash
+{
+  "priv": "b64walletprivatekey",
+  "addr": "octwalletaddress",
+  "rpc": "https://octra.network"
+}
+```
+
 **required files in same directory**
 
 -   wallet.json - create with your credentials
