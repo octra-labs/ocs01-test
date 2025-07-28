@@ -40,6 +40,26 @@ cp EI/exec_interface.json .
 **required files in same directory**
 
 -   wallet.json - create with your credentials
+```bash
+# create a wallet.json file 
+touch wallet.json
+
+# open the wallet.json 
+nano wallet.json
+
+# open wallet.json and edit it (change placeholders to your wallet data):
+
+{
+  "priv": "private-key-here",
+  "addr": "octxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "rpc": "https://octra.network"
+}
+
+# Note the priv is your B64 private key
+# save and exit with 
+# Ctrl + X , Then press Y , then hit Enter button
+```
+
 -   exec_interface.json - copy from EI/ folder
 
 **run**
