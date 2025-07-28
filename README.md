@@ -1,56 +1,34 @@
-**ocs01-test**
-
-rust cli for testing ocs01 smart contract
-
-**what it does**
-
--   tests all ocs01 contract methods
--   interactive menu for easy navigation
--   shows results instantly for view methods
--   handles tx signing for call methods
-
-**works on**
-
--   linux
--   macos
--   windows
-
-**install rust (if not installed)**
-
-```bash
+Pastikan Anda telah menginstal Rust. Jika belum, Anda dapat menginstalnya menggunakan perintah berikut:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-```
 
-**build from source**
+Langkah-langkah
+ * Kloning Repositori
+   Gunakan perintah git clone untuk menyalin repositori ke komputer lokal Anda:
+   git clone https://github.com/octra-labs/ocs01-test.git
 
-```bash
-git clone https://github.com/octra-labs/ocs01-test.git
-cd ocs01-test
-cargo build --release
-```
+ * Masuk ke Direktori Proyek
+   Pindah ke direktori proyek yang baru saja Anda kloning:
+   cd ocs01-test
 
-**setup**
+ * Bangun Proyek
+   Gunakan cargo build untuk membangun proyek. Perintah --release akan membuat versi yang dioptimalkan untuk produksi:
+   cargo build --release
 
-```bash
-# copy contract interface
-cp EI/exec_interface.json .
-```
+ * Pengaturan
+   Salin file antarmuka kontrak ke direktori utama proyek:
+   cp EI/exec_interface.json .
 
-**required files in same directory**
+ * Siapkan File yang Dibutuhkan
+   Pastikan dua file berikut ada di direktori yang sama dengan biner yang akan Anda jalankan:
+   * wallet.json: Buat file ini dengan kredensial dompet Anda.
+   * exec_interface.json: Salin dari folder EI/.
+ * Jalankan Aplikasi
+   Salin biner rilis dan file antarmuka eksekusi (exec_interface.json) ke direktori CLI Anda. Biner rilis terletak di ./target/release/ocs01-test. Setelah itu, jalankan aplikasi:
+   ./target/release/ocs01-test
 
--   wallet.json - create with your credentials
--   exec_interface.json - copy from EI/ folder
+Setelah menjalankan perintah di atas, Anda akan melihat menu interaktif yang dapat Anda gunakan untuk berinteraksi dengan kontrak pintar.  
 
-**run**
+kontrak pintar yang diuji adalah octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn
 
-you must copy the release binary to your cli folder and also copy the EI file (execution interface file) to the same location 
-
-the release binary is located in this folder after successful build. 
-```bash
-./target/release/ocs01-test
-```
-
-*for this task the ei file contains the interface for contract at address octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn, do not modify it*
-
-after running, follow the menu to interact with the contract
+### ❌Jangan ubah file exec_interface.json.
