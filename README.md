@@ -14,6 +14,7 @@ rust cli for testing ocs01 smart contract
 -   linux
 -   macos
 -   windows
+-   virtual IDE
 
 **install rust (if not installed)**
 
@@ -44,13 +45,24 @@ cp EI/exec_interface.json .
 
 **run**
 
-you must copy the release binary to your cli folder and also copy the EI file (execution interface file) to the same location 
+you must copy both wallet.json and exec_interface.json to the folder that conains the executable file which is the ocs01-test
 
-the release binary is located in this folder after successful build. 
+You can find it after succesfully building.
+
+**build**
+To ensure the executable file is available run (ran into some problem with mine)
+```bash
+cd target/release
+```
+if it isn't available run
+```bash
+cargo build --release
+```
+To run the file Run:
 ```bash
 ./target/release/ocs01-test
 ```
 
-*for this task the ei file contains the interface for contract at address octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn, do not modify it*
+*for this task the ei file(exec_interface.json) contains the interface for contract at address octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn, do not modify it*
 
 after running, follow the menu to interact with the contract
