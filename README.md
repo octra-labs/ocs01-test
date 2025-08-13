@@ -50,6 +50,10 @@ the release binary is located in this folder after successful build.
 ```bash
 ./target/release/ocs01-test
 ```
+but in case, it shows `no such file or directory`. try this
+```bash
+cargo +nightly run --release
+```
 
 *for this task the ei file contains the interface for contract at address octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn, do not modify it*
 
